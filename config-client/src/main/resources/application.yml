@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master
+      profile: dev
+      #uri: http://localhost:8888/ #这里配置配置中心的地址，在java代码里面直接${xxx}就能注入进去
+      discovery:
+        enabled: true
+        serviceId: config-server
+
+management:
+  security:
+
+
+server:
+  port: 8881

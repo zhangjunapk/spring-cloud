@@ -7,7 +7,7 @@ server:
   port: 8888
 
 spring:
-  cloutd:
+  cloud:
     config:
       server:
         git:
